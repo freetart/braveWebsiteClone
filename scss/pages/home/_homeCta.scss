@@ -1,0 +1,29 @@
+.cta {
+  @include flexCenter();
+  @include sectionSpacing();
+  @include maxWidth();
+
+  h2 {
+    font-size: size(xxl) + 3rem;
+    background: -webkit-radial-gradient(color(orange), color(purple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  small {
+    @include textStyles();
+    display: block;
+    font-size: size(xs);
+  }
+
+  a:not(.btn) {
+    @include textStyles();
+    color: color(purple);
+    font-size: size(xs);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
