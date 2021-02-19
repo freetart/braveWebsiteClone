@@ -1,0 +1,26 @@
+.two-col-content {
+  @include maxWidth();
+  @include sectionSpacing();
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+
+  .underline {
+    height: 1rem;
+    width: 50%;
+    border-radius: 1rem;
+    background: linear-gradient(to left, color(purple), color(violet));
+  }
+
+  h2 {
+    @include headingStyles();
+    color: color(purple);
+    font-size: size(xxl);
+  }
+
+  p {
+    @include textStyles();
+    font-size: size(sm);
+  }
+}
