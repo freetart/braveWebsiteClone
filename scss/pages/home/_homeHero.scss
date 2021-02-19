@@ -1,0 +1,26 @@
+.hero {
+  background: color(purple);
+  background: linear-gradient(to bottom right, color(purple), color(violet));
+  padding-top: 10rem;
+  height: 100vh;
+  overflow-y: hidden;
+
+  &-content {
+    @include flexCenter();
+    color: color(white);
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xxl) + 5rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(lg);
+    }
+  }
+
+  &-img-container {
+    @include flexCenter();
+  }
+}
