@@ -64,10 +64,26 @@
 }
 
 .speed {
-  background-color: color(lightblue);
-
   iframe {
     box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
+  }
+}
+
+.rewards {
+  background-color: color(lightblue);
+}
+
+.deal {
+  background-color: color(lightblue);
+
+  .creators {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 20rem;
+    }
   }
 }
