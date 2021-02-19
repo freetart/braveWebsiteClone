@@ -63,20 +63,15 @@
   }
 }
 
-.speed {
-  iframe {
-    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-  }
-}
-
 .rewards {
   background-color: color(lightblue);
 }
 
-.deal {
+.tor {
   background-color: color(lightblue);
+}
 
+.deal {
   .creators {
     display: flex;
     align-items: center;
