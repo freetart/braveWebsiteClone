@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 
   .underline {
     height: 1rem;
@@ -23,9 +23,51 @@
     @include textStyles();
     font-size: size(sm);
   }
+
+  small {
+    @include textStyles();
+    font-size: size(xs);
+    color: color(purple);
+  }
+
+  a {
+    @include textStyles();
+    font-size: size(xs);
+    color: color(purple);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .one-col-content {
   @include flexCenter();
   @include sectionSpacing();
+}
+
+.control {
+  background-color: color(lightblue);
+
+  h2 {
+    font-size: size(xxl) + 5rem;
+    background: -webkit-radial-gradient(color(orange), color(purple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  iframe {
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+  }
+}
+
+.speed {
+  background-color: color(lightblue);
+
+  iframe {
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+  }
 }
