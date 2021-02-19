@@ -30,6 +30,13 @@ button {
   cursor: pointer;
 }
 
+svg,
+path {
+  display: block;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
 // REDUCE MOTION
 @media (prefers-reduced-motion: reduce) {
   *,

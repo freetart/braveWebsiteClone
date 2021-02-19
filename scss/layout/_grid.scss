@@ -24,3 +24,8 @@
     font-size: size(sm);
   }
 }
+
+.one-col-content {
+  @include flexCenter();
+  @include sectionSpacing();
+}
