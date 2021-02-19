@@ -87,3 +87,27 @@
     }
   }
 }
+
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom right,
+    color(purple) 60%,
+    color(orange)
+  );
+
+  .testimonial {
+    color: color(white);
+    text-align: center;
+
+    p {
+      @include textStyles();
+      font-style: italic;
+    }
+
+    img {
+      width: 10rem;
+    }
+  }
+}

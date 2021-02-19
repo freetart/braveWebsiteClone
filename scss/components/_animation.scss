@@ -1,0 +1,200 @@
+.square {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height: 35rem;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 5rem;
+}
+
+#s0 {
+  animation-name: a0;
+}
+@keyframes a0 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#s1 {
+  animation-name: a1;
+}
+@keyframes a1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(160deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#s2 {
+  animation-name: a2;
+}
+@keyframes a2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(140deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#s3 {
+  animation-name: a3;
+}
+@keyframes a3 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(120deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#s4 {
+  animation-name: a4;
+}
+@keyframes a4 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(100deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#s5 {
+  animation-name: a5;
+}
+@keyframes a5 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(80deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#s6 {
+  animation-name: a6;
+}
+@keyframes a6 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(60deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#s7 {
+  animation-name: a7;
+}
+@keyframes a7 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(40deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#s8 {
+  animation-name: a8;
+}
+@keyframes a8 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(20deg);
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 1rem color(orange);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
