@@ -13,7 +13,7 @@ function fixNav() {
 
 window.addEventListener("scroll", fixNav);
 
-// faq dropdon
+// faq dropdown
 const faqLink = document.querySelectorAll(".faq-content-link");
 
 faqLink.forEach((toggle) => {

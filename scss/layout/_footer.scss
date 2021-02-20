@@ -1,0 +1,57 @@
+.footer {
+  background-color: color(lightblack);
+
+  &-content {
+    @include maxWidth();
+
+    &-top {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      h4 {
+        @include headingStyles();
+        background: -webkit-linear-gradient(
+          top right,
+          color(orange),
+          color(purple)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: size(md);
+      }
+
+      li {
+        margin: 1rem 0;
+      }
+
+      a {
+        @include textStyles();
+        color: color(white);
+        font-size: size(xs);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 0.1rem solid color(white);
+      padding: 1rem 0;
+
+      img {
+        width: 10rem;
+      }
+
+      p {
+        @include textStyles();
+        color: color(white);
+        font-size: size(xxs);
+      }
+    }
+  }
+}

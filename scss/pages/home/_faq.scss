@@ -13,7 +13,7 @@
     &-link {
       @include headingStyles();
       color: color(white);
-      font-size: size(lg);
+      font-size: size(sm);
       display: flex;
       align-items: center;
       justify-content: space-between;
