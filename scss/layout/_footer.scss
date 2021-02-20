@@ -13,7 +13,7 @@
         grid-template-columns: repeat(3, 1fr);
       }
 
-      @include responsive(sm) {
+      @include responsive(md) {
         grid-template-columns: 1fr;
       }
 

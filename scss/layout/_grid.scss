@@ -11,7 +11,9 @@
   }
 
   &-info {
-    order: -1;
+    @include responsive(xl) {
+      order: -1;
+    }
   }
 
   .underline {

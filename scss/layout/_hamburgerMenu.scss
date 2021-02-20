@@ -18,8 +18,8 @@
 
 .hamburger-menu {
   position: absolute;
-  top: 2.3rem;
-  right: 2rem;
+  top: 2rem;
+  right: 3.5rem;
   display: none;
   z-index: 1001;
 
@@ -29,7 +29,7 @@
 
   i {
     color: color(white);
-    font-size: size(xl);
+    font-size: size(xxl);
   }
 }
 
