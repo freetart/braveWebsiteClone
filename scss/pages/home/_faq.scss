@@ -1,0 +1,42 @@
+.faq {
+  background-color: color(lightblack);
+
+  &-container {
+    border-bottom: 1px solid color(white);
+    padding: 1rem;
+  }
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    &-link {
+      @include headingStyles();
+      color: color(white);
+      font-size: size(lg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-info {
+      @include textStyles();
+      color: color(white);
+      display: none;
+      font-size: size(xs);
+      margin-bottom: 2rem;
+
+      &.show {
+        display: block;
+      }
+
+      &-link {
+        color: color(orange);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

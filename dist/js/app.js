@@ -12,3 +12,12 @@ function fixNav() {
 }
 
 window.addEventListener("scroll", fixNav);
+
+// faq dropdon
+const faqLink = document.querySelectorAll(".faq-content-link");
+
+faqLink.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    toggle.nextElementSibling.classList.toggle("show");
+  });
+});

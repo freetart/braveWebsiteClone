@@ -1,29 +1,38 @@
 .cta {
-  @include flexCenter();
-  @include sectionSpacing();
-  @include maxWidth();
+  background-color: color(lightblack);
 
-  h2 {
-    font-size: size(xxl) + 3rem;
-    background: -webkit-radial-gradient(color(orange), color(purple));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  &-content {
+    @include flexCenter();
+    @include sectionSpacing();
+    @include maxWidth();
 
-  small {
-    @include textStyles();
-    display: block;
-    font-size: size(xs);
-  }
+    h2 {
+      font-size: size(xxl) + 3rem;
+      background: -webkit-linear-gradient(
+        top right,
+        color(orange),
+        color(purple)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-  a:not(.btn) {
-    @include textStyles();
-    color: color(purple);
-    font-size: size(xs);
+    small {
+      @include textStyles();
+      display: block;
+      font-size: size(xs);
+      color: color(white);
+    }
 
-    &:hover {
-      text-decoration: underline;
+    a:not(.btn) {
+      @include textStyles();
+      color: color(orange);
+      font-size: size(xs);
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
