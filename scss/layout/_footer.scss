@@ -3,10 +3,23 @@
 
   &-content {
     @include maxWidth();
+    padding: 0 2rem;
 
     &-top {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
+
+      @include responsive(xxl) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include responsive(sm) {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-col {
+        margin-bottom: 1rem;
+      }
 
       h4 {
         @include headingStyles();
@@ -40,6 +53,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
       border-top: 0.1rem solid color(white);
       padding: 1rem 0;
 

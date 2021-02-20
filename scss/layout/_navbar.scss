@@ -17,6 +17,12 @@
       }
     }
 
+    .navbar-links {
+      @include responsive(xl) {
+        display: none;
+      }
+    }
+
     .navbar-link {
       color: color(white);
       font-size: size(xs);

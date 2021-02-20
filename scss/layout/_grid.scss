@@ -6,11 +6,23 @@
   align-items: center;
   gap: 4rem;
 
+  @include responsive(xl) {
+    grid-template-columns: 1fr;
+  }
+
+  &-info {
+    order: -1;
+  }
+
   .underline {
     height: 1rem;
     width: 50%;
     border-radius: 1rem;
     background: linear-gradient(to left, color(purple), color(violet));
+
+    @include responsive(sm) {
+      width: 100%;
+    }
   }
 
   h2 {
@@ -55,11 +67,37 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include responsive(xl) {
+      font-size: size(xxl) + 3rem;
+    }
   }
 
   iframe {
     box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
+    width: 80rem;
+    height: 50rem;
+
+    @include responsive(xl) {
+      width: 70rem;
+      height: 40rem;
+    }
+
+    @include responsive(lg) {
+      width: 55rem;
+      height: 30rem;
+    }
+
+    @include responsive(md) {
+      width: 40rem;
+      height: 25rem;
+    }
+
+    @include responsive(sm) {
+      width: 35rem;
+      height: 25rem;
+    }
   }
 }
 
@@ -73,9 +111,12 @@
 
 .deal {
   .creators {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include responsive(md) {
+      grid-template-columns: 1fr;
+    }
 
     img {
       width: 20rem;
@@ -99,10 +140,19 @@
     p {
       @include textStyles();
       font-style: italic;
+      font-size: size(md);
+      max-width: 75%;
+      margin: auto;
+      z-index: 5;
+
+      @include responsive(md) {
+        max-width: 100%;
+      }
     }
 
     img {
       width: 10rem;
+      z-index: 5;
     }
   }
 }
