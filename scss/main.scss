@@ -13,14 +13,12 @@
 // Layout
 @import "layout/navbar";
 @import "layout/hamburgerMenu";
-@import "layout/grid";
 @import "layout/footer";
 
 // Pages
 @import "pages/home/homeHero";
+@import "pages/home/homeGrid";
 @import "pages/home/homeCta";
 @import "pages/home/faq";
 
-// Themes
-
-// Vendors
+@import "pages/browser/browserHero";

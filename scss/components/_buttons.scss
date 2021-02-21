@@ -19,9 +19,19 @@
   padding: 1rem 3rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
-  // display: block;
 
   &:hover {
     opacity: 0.9;
+  }
+}
+
+.btn-white {
+  @extend .btn-orange;
+  background-color: transparent;
+  color: color(white);
+  border: 0.1rem solid color(white);
+
+  @include responsive(sm) {
+    padding: 1rem 2rem;
   }
 }
