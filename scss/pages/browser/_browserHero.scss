@@ -1,7 +1,7 @@
 .browser-hero {
   background: color(purple);
   background: linear-gradient(color(purple), color(orange));
-  padding-top: 15rem;
+  padding-top: 10rem;
 
   &-content {
     @include maxWidth();

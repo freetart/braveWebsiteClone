@@ -1,0 +1,38 @@
+.creators-hero {
+  background: color(purple);
+  background: linear-gradient(color(violet), color(purple));
+  padding-top: 10rem;
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    color: color(white);
+    text-align: center;
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xxl) + 2rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+    }
+
+    &-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .creators-hero-content-icon {
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+
+        i {
+          font-size: size(xxl);
+        }
+      }
+    }
+  }
+}
