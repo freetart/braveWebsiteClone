@@ -1,0 +1,73 @@
+.how-brave-rewards-work {
+  background: color(purple);
+  background: linear-gradient(color(purple), color(violet));
+  color: color(white);
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xxl) + 3rem;
+    text-align: center;
+  }
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    .rewards-works {
+      display: flex;
+      flex-direction: column;
+
+      .reward {
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @include responsive(xl) {
+          width: 100%;
+        }
+
+        &-title {
+          display: flex;
+          align-items: center;
+
+          h4 {
+            font-size: size(xxl) + 2rem;
+            background: -webkit-linear-gradient(color(orange), color(purple));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 1rem 1rem 0.1rem color(white);
+          }
+
+          h5 {
+            @include headingStyles();
+            font-size: size(md);
+            margin: 0.5rem;
+          }
+        }
+
+        p {
+          @include textStyles();
+          font-size: size(xs);
+        }
+      }
+
+      .reward:nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .rewards-links {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      a {
+        margin: 1rem;
+      }
+    }
+  }
+}
