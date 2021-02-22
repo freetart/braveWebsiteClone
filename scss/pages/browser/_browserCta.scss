@@ -1,0 +1,12 @@
+.browser-cta {
+  text-align: center;
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xxl) + 2rem;
+    background: -webkit-linear-gradient(color(purple), color(orange));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
