@@ -1,3 +1,4 @@
+// two col grid
 .browser-grid-content {
   @include sectionSpacing();
   @include maxWidth();
@@ -52,6 +53,7 @@
   }
 }
 
+// three col grid
 .browse-safer-content {
   @include sectionSpacing();
   @include maxWidth();
@@ -88,5 +90,70 @@
     @include textStyles();
     font-size: size(sm);
     margin-bottom: 2rem;
+  }
+}
+
+// three col grid
+.browser-features {
+  .section-heading {
+    padding: 0 1rem;
+    text-align: center;
+
+    small {
+      @include textStyles();
+      color: color(orange);
+      font-size: size(sm);
+    }
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xxl) + 2rem;
+    }
+  }
+
+  &-content {
+    @include sectionSpacing();
+    @include maxWidth();
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    border-bottom: 0.1rem solid #e2dfdf;
+
+    @include responsive(xl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(lg) {
+      grid-template-columns: 1fr;
+    }
+
+    &-col {
+      margin: 1rem;
+
+      .col-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        i {
+          color: color(purple);
+          font-size: size(lg);
+        }
+
+        h4 {
+          @include headingStyles();
+          font-size: size(lg);
+          margin-left: 0.5rem;
+        }
+      }
+
+      li {
+        @include textStyles();
+        font-size: size(xs);
+        list-style: square;
+        margin-bottom: 0.5rem;
+        margin-left: 5rem;
+      }
+    }
   }
 }
