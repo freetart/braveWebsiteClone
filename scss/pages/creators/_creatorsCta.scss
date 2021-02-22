@@ -1,0 +1,10 @@
+.creators-cta {
+  @include maxWidth();
+  @include sectionSpacing();
+  text-align: center;
+
+  h4 {
+    @include headingStyles();
+    font-size: size(lg);
+  }
+}
