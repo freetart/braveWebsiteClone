@@ -9,6 +9,10 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
     <link rel="shortcut icon" href="images/favicons/koala.ico" />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Brave Clone | Creators</title>
@@ -103,7 +107,63 @@
       ></path>
     </svg>
 
-    <main></main>
+    <main>
+      <!-- carousel -->
+      <section class="carousel">
+        <h2 class="mb-2">You create content and we get you paid.</h2>
+        <p class="mb-5">
+          Brave Rewards helps you earn more for doing what you do best and get
+          back some of that revenue lost for when your viewers use ad blocking.
+          Get paid directly by your audience for your content, instead of
+          relying on ad revenue.
+        </p>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img
+                  src="images/creators/carousel1.webp"
+                  alt="carousel slide img 1"
+                />
+                <blockquote>
+                  <p>
+                    "Brave is a great frictionless way for fans to support the
+                    creators they watch.
+                  </p>
+                  <cite>- Scotty Allen</cite>
+                </blockquote>
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="images/creators/carousel2.webp"
+                  alt="carousel slide img 2"
+                />
+                <blockquote>
+                  <p>
+                    "Brave is basically free crowdfunding. It is like Patreon
+                    but without having to spend any of your hard earned money."
+                  </p>
+                  <cite>- Bart Baker</cite>
+                </blockquote>
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="images/creators/carousel3.webp"
+                  alt="carousel slide img 3"
+                />
+                <blockquote>
+                  <p>
+                    "There are also so many other ways just coming out that you
+                    can make new money and people can support other creators."
+                  </p>
+                  <cite>- Philip DeFranco</cite>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer class="footer py-5">
@@ -170,5 +230,14 @@
       </div>
     </footer>
     <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        autoplay: 8000,
+        hoverpause: true,
+      };
+      new Glide(".glide", config).mount();
+    </script>
   </body>
 </html>
