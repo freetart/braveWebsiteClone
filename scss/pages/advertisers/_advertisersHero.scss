@@ -1,0 +1,42 @@
+.advertisers-hero {
+  background: linear-gradient(
+      rgba(color(violet), 0.6),
+      rgba(color(purple), 0.6)
+    ),
+    url("/dist/images/advertisers/advertisersHeroBg.jpg") center center/cover
+      no-repeat;
+  padding-top: 10rem;
+  overflow-y: hidden;
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    color: color(white);
+
+    @include responsive(xl) {
+      grid-template-columns: 1fr;
+    }
+
+    &-info {
+      @include responsive(xl) {
+        order: -1;
+        padding-bottom: 2rem;
+        text-align: center;
+      }
+    }
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xxl) + 2rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+    }
+  }
+}
