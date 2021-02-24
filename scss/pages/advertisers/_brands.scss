@@ -6,7 +6,7 @@
     url("/dist/images/advertisers/advertisersBg2.jpg") center center/cover
       no-repeat;
   position: relative;
-  height: 50vh;
+  height: 40vh;
 
   &-content {
     @include maxWidth();

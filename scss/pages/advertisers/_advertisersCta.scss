@@ -1,0 +1,34 @@
+.advertisers-cta {
+  @include sectionSpacing();
+  margin-top: 30rem;
+  &-content {
+    text-align: center;
+
+    img {
+      width: 25rem;
+    }
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xxl);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+    }
+
+    a:not(.btn-orange) {
+      color: color(orange);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    small {
+      @include textStyles();
+      font-size: size(xs);
+    }
+  }
+}
