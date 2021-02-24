@@ -1,0 +1,50 @@
+.add-formats {
+  &-title {
+    text-align: center;
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xxl);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+    }
+  }
+
+  &-content {
+    @include maxWidthSm();
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    @include responsive(lg) {
+      grid-template-columns: 1fr;
+    }
+
+    &-left,
+    &-right {
+      text-align: center;
+
+      small {
+        font-size: size(xxs);
+      }
+    }
+  }
+
+  p {
+    @include textStyles();
+    font-size: size(xs);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 2rem 1rem;
+
+    @include responsive(xxl) {
+      width: 100%;
+    }
+  }
+}
