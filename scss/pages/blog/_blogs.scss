@@ -1,0 +1,48 @@
+.blogs {
+  @include maxWidth();
+  @include sectionSpacing();
+
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+
+    @include responsive(xxl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(lg) {
+      grid-template-columns: 1fr;
+    }
+
+    .blogs-card {
+      box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
+      padding: 2rem;
+      border-radius: 1rem;
+      color: color(black);
+
+      h5 {
+        @include headingStyles();
+        font-size: size(sm);
+      }
+
+      small {
+        @include textStyles();
+        font-size: size(xxs);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xs);
+        margin-top: 1rem;
+      }
+
+      &:hover,
+      &:focus {
+        background: linear-gradient(color(orange), color(purple));
+        color: color(white);
+        box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
