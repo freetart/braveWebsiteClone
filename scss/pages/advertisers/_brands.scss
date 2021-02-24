@@ -1,0 +1,98 @@
+.brands {
+  background: linear-gradient(
+      rgba(color(violet), 0.6),
+      rgba(color(purple), 0.6)
+    ),
+    url("/dist/images/advertisers/advertisersBg2.jpg") center center/cover
+      no-repeat;
+  position: relative;
+  height: 50vh;
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    &-card {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 5rem;
+      box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
+      width: 50%;
+
+      @include responsive(xxl) {
+        width: 75%;
+        padding: 3rem;
+      }
+
+      @include responsive(lg) {
+        width: 85%;
+        padding: 2.5rem;
+      }
+
+      @include responsive(md) {
+        width: 90%;
+      }
+
+      h3 {
+        @include headingStyles();
+        font-size: size(lg);
+        text-align: center;
+      }
+
+      blockquote {
+        text-align: center;
+
+        p {
+          @include textStyles();
+          font-size: size(xs);
+        }
+
+        cite {
+          @include textStyles();
+          font-size: size(xs);
+
+          a {
+            color: color(orange);
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &-companies {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .company {
+          img {
+            width: 15rem;
+          }
+        }
+
+        @include responsive(md) {
+          .company:nth-child(2) {
+            display: none;
+          }
+        }
+
+        @include responsive(sm) {
+          .company:nth-child(3) {
+            display: none;
+          }
+
+          .company:nth-child(4) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
