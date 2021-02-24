@@ -1,0 +1,40 @@
+.new-internet {
+  margin-top: 30rem;
+
+  &-content {
+    @include maxWidthSm();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    @include responsive(xl) {
+      grid-template-columns: 1fr;
+    }
+
+    small {
+      @include textStyles();
+      color: color(orange);
+      font-size: size(sm);
+    }
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+    }
+
+    a {
+      color: color(orange);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
