@@ -1,0 +1,41 @@
+.company-hero {
+  background: color(purple);
+  background: linear-gradient(to bottom right, color(purple), color(violet));
+  padding-top: 10rem;
+  height: 70vh;
+  position: relative;
+
+  &-content {
+    @include flexCenter();
+    padding: 0 2rem;
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xxl) + 4rem;
+      color: color(white);
+
+      background: -webkit-linear-gradient(color(orange), color(violet));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 1rem 1rem 0.1rem color(white);
+    }
+
+    img {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30%;
+
+      @include responsive(xxl) {
+        width: 40%;
+      }
+
+      @include responsive(lg) {
+        width: 60%;
+        top: 100%;
+      }
+    }
+  }
+}
