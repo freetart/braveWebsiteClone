@@ -1,0 +1,34 @@
+.blog-hero {
+  padding-top: 10rem;
+  background: color(purple);
+  background: linear-gradient(to bottom right, color(orange), color(purple));
+
+  &-content {
+    @include sectionSpacing();
+    @include maxWidth();
+    @include flexCenter();
+    color: color(white);
+
+    small {
+      @include textStyles();
+      color: color(orange);
+      font-size: size(sm);
+    }
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xxl) + 2rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+      width: 70%;
+      margin: auto;
+
+      @include responsive(xl) {
+        width: 100%;
+      }
+    }
+  }
+}
