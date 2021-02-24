@@ -41,6 +41,10 @@ path {
   margin-bottom: -1px;
 }
 
+.current {
+  border-bottom: 0.1rem solid color(orange);
+}
+
 // REDUCE MOTION
 @media (prefers-reduced-motion: reduce) {
   *,
