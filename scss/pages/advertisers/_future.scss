@@ -1,0 +1,68 @@
+.future {
+  background-color: color(lightgray);
+
+  &-title {
+    text-align: center;
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xxl);
+    }
+  }
+
+  &-content {
+    @include maxWidthSm();
+    padding: 2rem 2rem;
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      align-items: center;
+
+      @include responsive(xl) {
+        grid-template-columns: 1fr;
+      }
+
+      .future-card {
+        &-title {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2rem;
+
+          img {
+            width: 4rem;
+          }
+
+          h4 {
+            @include headingStyles();
+            font-size: size(md);
+            margin-left: 2rem;
+          }
+        }
+
+        p {
+          @include textStyles();
+          font-size: size(xs);
+        }
+      }
+    }
+
+    &-bottom {
+      text-align: center;
+
+      a {
+        color: color(orange);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xs);
+      }
+    }
+  }
+}
