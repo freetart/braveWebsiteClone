@@ -1,0 +1,62 @@
+.meet-the-team {
+  background-color: color(lightgray);
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+  }
+
+  &-title {
+    text-align: center;
+
+    small {
+      @include textStyles();
+      color: color(orange);
+      font-size: size(sm);
+    }
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+      width: 70%;
+      margin: auto;
+
+      @include responsive(xl) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    .team-card {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 1rem;
+
+      img {
+        width: 20rem;
+      }
+
+      h4 {
+        @include headingStyles();
+        font-size: size(sm);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xxs);
+      }
+    }
+  }
+}
