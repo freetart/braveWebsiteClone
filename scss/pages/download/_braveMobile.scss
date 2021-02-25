@@ -1,0 +1,43 @@
+.brave-mobile {
+  background: color(purple);
+  background: linear-gradient(to bottom right, color(orange), color(purple));
+
+  &-content {
+    @include flexCenter();
+    @include maxWidth();
+    @include sectionSpacing();
+    color: color(white);
+
+    img {
+      width: 20rem;
+    }
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xxl) + 2rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+      width: 75%;
+      margin: 0 auto;
+
+      @include responsive(xl) {
+        width: 100%;
+      }
+    }
+
+    .stores {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 20rem;
+        padding: 1rem;
+      }
+    }
+  }
+}
