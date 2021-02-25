@@ -1,0 +1,53 @@
+.download-cards {
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    align-items: center;
+
+    @include responsive(xl) {
+      grid-template-columns: 1fr;
+    }
+
+    img {
+      width: 25rem;
+    }
+
+    h4 {
+      @include headingStyles();
+      font-size: size(md);
+    }
+  }
+
+  &-bottom {
+    text-align: center;
+    padding: 0 2rem;
+
+    h5 {
+      @include headingStyles();
+      font-size: size(xl);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+      width: 75%;
+      margin: 0 auto;
+
+      @include responsive(xl) {
+        width: 100%;
+      }
+    }
+
+    a {
+      color: color(orange);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
