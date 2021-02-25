@@ -1,0 +1,38 @@
+.download-hero {
+  background: color(purple);
+  background: linear-gradient(to bottom right, color(purple), color(violet));
+
+  &-content {
+    @include flexCenter();
+    @include maxWidth();
+    @include sectionSpacing();
+    color: color(white);
+
+    small {
+      @include headingStyles();
+      font-size: size(sm);
+    }
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xxl) + 3rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+      width: 75%;
+      margin: 0 auto;
+
+      @include responsive(xl) {
+        width: 100%;
+      }
+    }
+  }
+
+  img {
+    @include maxWidth();
+    @include flexCenter();
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 218 190">
+  <defs>
+    <filter id="mobile-a" width="144.6%" height="135.8%" x="-22.3%" y="-17.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.152941   0 0 0 0 0.180392   0 0 0 0 0.25098  0 0 0 0.2 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="mobile-b" x1="35.192%" x2="146.327%" y1="0%" y2="222.965%">
+      <stop offset="0%" stop-color="#0F0771"/>
+      <stop offset="100%" stop-color="#FF4343"/>
+    </linearGradient>
+    <path id="mobile-d" d="M44,50.842494 C44,46.5112042 47.5200031,43 51.8359463,43 L110.701626,43 C115.0293,43 118.537572,46.5195579 118.537572,50.842494 L118.537572,55.6312256 C118.537572,59.9625154 115.017569,63.4737196 110.701626,63.4737196 L51.8359463,63.4737196 C47.5082727,63.4737196 44,59.9541617 44,55.6312256 L44,50.842494 Z"/>
+    <filter id="mobile-c" width="153.7%" height="295.4%" x="-26.8%" y="-48.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.152941   0 0 0 0 0.180392   0 0 0 0 0.25098  0 0 0 0.2 0"/>
+    </filter>
+    <filter id="mobile-e" width="192.5%" height="150.8%" x="-46.3%" y="-25.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.152941   0 0 0 0 0.180392   0 0 0 0 0.25098  0 0 0 0.2 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="mobile-f" x1="0%" y1="50.706%" y2="50.706%">
+      <stop offset="0%" stop-color="#F50"/>
+      <stop offset="57.237%" stop-color="#FF2000"/>
+      <stop offset="100%" stop-color="#FF2000"/>
+    </linearGradient>
+    <path id="mobile-g" d="M8.82647191,5.23098438 C9.09305899,5.42514063 9.15069944,5.79682813 8.95376124,6.06045313 L6.29989888,9.62295313 C6.20142978,9.75535938 6.05252528,9.84145313 5.88800983,9.86104688 C5.86399298,9.86401563 5.83997612,9.86520313 5.81655969,9.86520313 C5.6760611,9.86520313 5.53916503,9.81651563 5.43108919,9.72626563 L3.28158076,7.94501563 C3.02700211,7.73482813 2.99397893,7.36017188 3.20652809,7.10842188 C3.41907725,6.85785938 3.79794312,6.82342188 4.05252177,7.03479688 L5.71208638,8.40992188 L7.98708287,5.35685938 C8.18402107,5.09323438 8.55928441,5.03623438 8.82647191,5.23098438 Z M10.8709066,2.14645313 L10.2704853,2.14645313 C7.74871559,2.14645313 6.61331882,0.670984375 6.56828722,0.611609375 C6.44099789,0.435859375 6.23445295,0.360453125 6.03091011,0.377078125 C5.85438624,0.384203125 5.68206531,0.457828125 5.56858567,0.608640625 C5.52175281,0.670984375 4.38575562,2.14645313 1.86458638,2.14645313 L1.26416503,2.14645313 C0.601900281,2.14645313 0.0633223315,2.67904688 0.0633223315,3.33395313 L0.0633223315,5.11520313 C0.0633223315,5.44295313 0.0663244382,5.98089063 0.0699269663,6.30864063 C0.0705273876,6.37098438 0.202620084,12.5430156 5.86219171,14.5789844 C5.86639466,14.5801719 5.87059761,14.5801719 5.87420014,14.5813594 C5.93604354,14.6021406 6.00088904,14.6152031 6.06753581,14.6152031 C6.13418258,14.6152031 6.19842767,14.6021406 6.26027107,14.5813594 C6.26447402,14.5801719 6.26867697,14.5801719 6.27287992,14.5789844 C11.9324515,12.5430156 12.0645442,6.37098438 12.0651447,6.30864063 C12.0687472,5.98089063 12.0717493,5.44295313 12.0717493,5.11520313 L12.0717493,3.33395313 C12.0717493,2.67904688 11.5331713,2.14645313 10.8709066,2.14645313 Z"/>
+    <ellipse id="mobile-i" cx="17.467" cy="67.466" rx="8.467" ry="8.466"/>
+    <filter id="mobile-h" width="324.4%" height="324.4%" x="-112.2%" y="-82.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.152941   0 0 0 0 0.180392   0 0 0 0 0.25098  0 0 0 0.2 0"/>
+    </filter>
+    <ellipse id="mobile-k" cx="176.467" cy="71.466" rx="4.467" ry="4.466"/>
+    <filter id="mobile-j" width="525.3%" height="525.5%" x="-212.7%" y="-156.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.152941   0 0 0 0 0.180392   0 0 0 0 0.25098  0 0 0 0.2 0"/>
+    </filter>
+    <ellipse id="mobile-m" cx="151.467" cy="23.466" rx="8.467" ry="8.466"/>
+    <filter id="mobile-l" width="324.4%" height="324.4%" x="-112.2%" y="-82.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.152941   0 0 0 0 0.180392   0 0 0 0 0.25098  0 0 0 0.2 0"/>
+    </filter>
+    <path id="mobile-o" d="M0,113.842494 C0,109.511204 3.51885254,106 7.84130447,106 L54.6962678,106 C59.0269007,106 62.5375723,109.519558 62.5375723,113.842494 L62.5375723,118.631226 C62.5375723,122.962515 59.0187197,126.47372 54.6962678,126.47372 L7.84130447,126.47372 C3.51067159,126.47372 0,122.954162 0,118.631226 L0,113.842494 Z"/>
+    <filter id="mobile-n" width="216.7%" height="456.6%" x="-58.4%" y="-129.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.152941   0 0 0 0 0.180392   0 0 0 0 0.25098  0 0 0 0.2 0"/>
+    </filter>
+    <rect id="mobile-q" width="30.358" height="20.474" x="157" y="126" rx="7.841"/>
+    <filter id="mobile-p" width="231.8%" height="295.4%" x="-65.9%" y="-63.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="7" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.152941176   0 0 0 0 0.180392157   0 0 0 0 0.250980392  0 0 0 0.2 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(20 4)">
+    <g filter="url(#mobile-a)" transform="translate(18)">
+      <path fill="url(#mobile-b)" d="M0.265142452,9.3632349 C0.265142452,4.39289387 4.29078262,0.363636364 9.25649417,0.363636364 L129.528806,0.363636364 C134.494592,0.363636364 138.520157,4.39382257 138.520157,9.3632349 L138.520157,163.831122 C138.520157,168.801463 134.494517,172.830721 129.528806,172.830721 L9.25649417,172.830721 C4.29070774,172.830721 0.265142452,168.800535 0.265142452,163.831122 L0.265142452,9.3632349 Z"/>
+      <path fill="#FFF" d="M6.27913276,11.8260258 C6.27913276,9.11047762 8.47003931,6.90909091 11.1886412,6.90909091 L127.596659,6.90909091 C130.308105,6.90909091 132.506167,9.11549338 132.506167,11.8260258 L132.506167,142.459241 C132.506167,145.174789 130.315261,147.376176 127.596659,147.376176 L11.1886412,147.376176 C8.47719457,147.376176 6.27913276,145.169773 6.27913276,142.459241 L6.27913276,11.8260258 Z"/>
+      <g fill="#F1F1F1" fill-rule="nonzero" opacity=".519" transform="translate(18 22)">
+        <rect width="91.862" height="5.275" rx=".818"/>
+        <rect width="89.502" height="5.275" y="19.592" rx=".818"/>
+        <rect width="89.502" height="5.275" y="94" rx=".818"/>
+        <rect width="103.684" height="11.303" y="43.704" rx=".818"/>
+        <rect width="103.684" height="23.359" y="61.789" rx=".818"/>
+        <rect width="104" height="3" y="11" rx=".818"/>
+        <rect width="101" height="3" y="30" rx=".818"/>
+        <rect width="101" height="3" y="105" rx=".818"/>
+      </g>
+      <use fill="#000" filter="url(#mobile-c)" xlink:href="#mobile-d"/>
+      <use fill="url(#mobile-b)" xlink:href="#mobile-d"/>
+      <circle cx="69" cy="159" r="6" fill="#FFF" fill-rule="nonzero"/>
+    </g>
+    <g filter="url(#mobile-e)" transform="translate(103 51)">
+      <path fill="url(#mobile-f)" d="M0,8.99570918 C0,4.02751619 4.02780137,0 9.00113153,0 L57.9988685,0 C62.9700561,0 67,4.02440931 67,8.99570918 L67,113.004291 C67,117.972484 62.9721986,122 57.9988685,122 L9.00113153,122 C4.02994385,122 0,117.975591 0,113.004291 L0,8.99570918 Z"/>
+      <path fill="#FFF" d="M3 8.91086592C3 6.19866956 5.20705969 4 7.91446493 4L59.0855351 4C61.7997191 4 64 6.19805332 64 8.91086592L64 106.089134C64 108.80133 61.7929403 111 59.0855351 111L7.91446493 111C5.20028089 111 3 108.801947 3 106.089134L3 8.91086592zM10 115C10 114.447715 10.4501036 114 11.0034056 114L55.9965944 114C56.55076 114 57 114.443865 57 115L57 115C57 115.552285 56.5498964 116 55.9965944 116L11.0034056 116C10.44924 116 10 115.556135 10 115L10 115z"/>
+    </g>
+    <g transform="translate(115 64)">
+      <g fill="#EBEBEB" fill-rule="nonzero" transform="translate(.191 3)">
+        <rect width="24.775" height="3.5" x="17" rx=".818"/>
+        <rect width="37.866" height="3.5" y="18" rx=".818"/>
+        <rect width="37.866" height="3.5" y="72" rx=".818"/>
+        <rect width="43.866" height="7.5" y="34" rx=".818"/>
+        <rect width="43.866" height="15.5" y="46" rx=".818"/>
+      </g>
+      <rect width="27.964" height="1.727" x="17" y="10" fill="#EBEBEB" fill-rule="nonzero" rx=".818"/>
+      <rect width="42.739" height="1.727" y="28" fill="#EBEBEB" fill-rule="nonzero" rx=".818"/>
+      <rect width="42.739" height="1.727" y="82" fill="#EBEBEB" fill-rule="nonzero" rx=".818"/>
+      <use fill="url(#mobile-f)" xlink:href="#mobile-g"/>
+    </g>
+    <g fill-rule="nonzero">
+      <use fill="#000" filter="url(#mobile-h)" xlink:href="#mobile-i"/>
+      <use fill="#FFF" xlink:href="#mobile-i"/>
+    </g>
+    <g fill-rule="nonzero">
+      <use fill="#000" filter="url(#mobile-j)" xlink:href="#mobile-k"/>
+      <use fill="#FFF" xlink:href="#mobile-k"/>
+    </g>
+    <g fill-rule="nonzero">
+      <use fill="#000" filter="url(#mobile-l)" xlink:href="#mobile-m"/>
+      <use fill="url(#mobile-f)" xlink:href="#mobile-m"/>
+    </g>
+    <use fill="#000" filter="url(#mobile-n)" xlink:href="#mobile-o"/>
+    <use fill="url(#mobile-f)" xlink:href="#mobile-o"/>
+    <use fill="#000" filter="url(#mobile-p)" xlink:href="#mobile-q"/>
+    <use fill="#FFF" xlink:href="#mobile-q"/>
+  </g>
+</svg>
